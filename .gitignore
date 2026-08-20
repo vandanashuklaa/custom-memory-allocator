@@ -1,0 +1,32 @@
+
+---
+
+# 2️⃣ `.gitignore`
+
+```gitignore
+# Build files
+build/
+cmake-build-*/
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
