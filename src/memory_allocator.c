@@ -166,14 +166,14 @@ void memory_print_statistics(void)
     printf("Total Memory: %d bytes\n",
            MEMORY_POOL_SIZE);
 
-    printf("Used Memory: %zu bytes\n",
-           used_memory);
+    printf("Used Memory: %lu bytes\n",
+           (unsigned long)memory_get_used());
 
-    printf("Free Memory: %zu bytes\n",
-           memory_get_free());
+    printf("Free Memory: %lu bytes\n",
+           (unsigned long)memory_get_free());
 
-    printf("Active Allocations: %zu\n",
-           allocation_count);
+    printf("Active Allocations: %lu\n",
+           (unsigned long)memory_get_allocation_count());
 }
 
 
